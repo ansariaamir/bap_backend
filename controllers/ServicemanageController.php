@@ -291,9 +291,14 @@ if($roleEngine){
                 $dms->updated_on = date('Y-m-d H:i:s');
                 $dms->save();
             }
+
+             //DMS code started here
+              $dms_detail = ServiceDmsMapping::getDMS_mapped_withUploaded_data($dms->app->scpm_id,$dms->application_id);
+
             return $this->asJson([
                 'status' => true, 
                 'message'=>'action saved on this document',
+                'dms_detail' => $dms_detail,
                 'token' => $token,  
             ]);
          }else{
@@ -633,7 +638,7 @@ protected function revertapplication($model, $cdate, $pass_to){
                             'comment'=>$bo_FF_data['bo_comment'],
                             'translation_text'=>$translation_text,
                             'audio_file_url'=>($value['audio_file_path'] ? (Url::base(true).'/'.$value['audio_file_path']) : ""),
-                            'supporting_doc'=>($bo_FF_data['ff27'] ? $bo_FF_data['ff27'] : ""),
+                            'supporting_doc'=>(@$bo_FF_data['ff27'] ? $bo_FF_data['ff27'] : ""),
                             'action_taken'=>$value['action_taken'],
                             'created_on'=>date('d M Y h:i a',strtotime($value['created_on'])),
                         ];
@@ -669,8 +674,7 @@ protected function revertapplication($model, $cdate, $pass_to){
                 'status' => false, 'message'=>'Session expired. Please login again'
             ]);
         }
-    }
-    
+    }   
     
 }
 

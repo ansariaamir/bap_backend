@@ -102,7 +102,7 @@ class ServiceDmsMapping extends \yii\db\ActiveRecord
         $dms_mapping = self::find()->where(['scpm_id'=>$scpm_id,'is_active'=>1])->orderBy('preference_order ASC')->all();
         $dms_data = [];
          foreach ($dms_mapping as $key => $value) {
-            $t_app_dms_id = $remark = $file_url = NULL;
+            $t_app_dms_id = $remark = $file_url = $status = NULL;
             if($application_id!=NULL){
              $TApplicationDms = TApplicationDms::find()->where(['application_id'=>$application_id,'dms_mapping_id'=>$value->id])->One(); 
              if($TApplicationDms){
@@ -120,6 +120,7 @@ class ServiceDmsMapping extends \yii\db\ActiveRecord
                         ];
                     }                
                 }
+                $status = TApplicationDms::getFullStatus($TApplicationDms->dms_status);
             }
 
             $dms_data[] = [
@@ -132,7 +133,7 @@ class ServiceDmsMapping extends \yii\db\ActiveRecord
                  't_app_dms_id' => $t_app_dms_id,
                  'uploaded_remark' => $remark,
                  'file_url' => $file_url,
-                 'status'=>TApplicationDms::getFullStatus($TApplicationDms->dms_status),
+                 'status'=>$status,
                  'boUserOutput' => isset($boUserOutput) ? $boUserOutput : null   
             ]; 
          }

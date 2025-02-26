@@ -18,7 +18,7 @@
 
 </style>
 <div class="body">
-    <table width="100%" style="text-align: center; background-color: #f6c23e4d;">
+    <table width="100%" style="text-align: center; background-color: lightgreen;">
         <tr>
             <td>
                 <strong>Applicant Name:</strong><br>

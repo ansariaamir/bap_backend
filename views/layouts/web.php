@@ -153,7 +153,7 @@ AppAsset::register($this);
                      <li id="menu-item-2658" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-2658 active "><a href="<?= Yii::$app->urlManager->createUrl('/') ?>" aria-current="page">Home</a></li>
                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
                         <a href="#">About </a>
-                        <ul class="sub-menu">
+                        <!-- <ul class="sub-menu">
                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2736"><a href="history.html">History</a></li>
                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2492"><a href="who-who.html">Who’s Who</a></li>
                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2742"><a href="#">Organisation Chart</a></li>
@@ -168,18 +168,18 @@ AppAsset::register($this);
                            </li>
                            <li id="menu-item-2750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2750"><a href="#">Economy</a></li>
                           
-                        </ul>
+                        </ul> -->
                      </li>
                      <li id="menu-item-2804" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2804">
                         <a href="#">Departments </a>
-                        <ul class="sub-menu">
+                       <!--  <ul class="sub-menu">
                            <li id="menu-item-2803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2803"><a href="#">Health</a></li>
                            <li id="menu-item-2802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802"><a href="#">Education</a></li>
                            <li id="menu-item-2801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2801"><a href="#">Handicraft</a></li>
                            <li id="menu-item-2800" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2800"><a href="#">Animal Husbandry</a></li>
-                        </ul>
+                        </ul> -->
                      </li>
-                     <li id="menu-item-2829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2829">
+                     <!-- <li id="menu-item-2829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2829">
                         <a href="#">Tourism </a>
                         <ul class="sub-menu">
                            <li id="menu-item-2828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2828"><a href="#">How to Reach</a></li>
@@ -220,13 +220,18 @@ AppAsset::register($this);
                            <li id="menu-item-2469" class="menu-item menu-item-type-taxonomy menu-item-object-notice_category menu-item-2469"><a href="#">Recruitment</a></li>
                            <li id="menu-item-2467" class="menu-item menu-item-type-taxonomy menu-item-object-notice_category menu-item-2467"><a href="#">Tenders</a></li>
                         </ul>
-                     </li>
-                     <li id="menu-item-2494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2494"><a href="services.html">Citizen Services</a></li>
+                     </li> -->
+                     <li id="menu-item-2494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2494">
+                        <a href="#">Acts & Rules</a></li>
+
                      <li id="menu-item-2495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2495">
                         <a href="<?= Yii::$app->urlManager->createUrl('/site/kya') ?>">Know Your Approval</a>
                      </li>
+                     <li id="menu-item-2495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2495">
+                        <a href="http://localhost:4200/#/login">Login</a>
+                     </li>
                     
-                     <li id="menu-item-2477" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2477">
+                   <!--   <li id="menu-item-2477" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2477">
                         <a href="#">Media Gallery</a>
                         <ul class="sub-menu">
                            <li id="menu-item-2496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2496"><a href="#">Photo Gallery</a></li>
@@ -234,7 +239,7 @@ AppAsset::register($this);
                            <li id="menu-item-2497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2497"><a href="#">Video Gallery</a></li>
                            <li id="menu-item-3167" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3167"><a href="#">Press Release</a></li>
                         </ul>
-                     </li>                    
+                     </li>     -->                
                   </ul>
                </nav>
             </div>
