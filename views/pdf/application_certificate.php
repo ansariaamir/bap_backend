@@ -28,7 +28,7 @@
 <div style="font-size: 32px; text-align: center;"><b>Certification</b></div><br>
 <br>
 <p style="font-size: 24px; text-align:justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    I here by certified that the applicant <b>Aamir</b> has been successfully registered to <b><?= $model->scpm->service->service_name ?></b> on <b><?= date('d M Y h:i a',strtotime($model->created_on)) ?></b> 
+    I here by certified that the applicant <b><?= 'Test Name' ?></b> has been successfully registered to <b><?= $model->scpm->service->service_name ?></b> on <b><?= date('d M Y h:i a',strtotime($model->created_on)) ?></b> 
 </p>
 
 

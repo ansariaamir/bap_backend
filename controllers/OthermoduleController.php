@@ -555,7 +555,7 @@ class OthermoduleController extends Controller
                 'model' => $model,  
                 'kyadata' => $data,
                 'optionData' => $this->optiondata($model->id),   
-                'serviceList' => \app\models\masters\Services::find()->all(),     
+                'serviceList' => \app\models\masters\Services::find()->where(['is_active'=>1])->all(),     
                 'token'=>$token
             ]); 
         }

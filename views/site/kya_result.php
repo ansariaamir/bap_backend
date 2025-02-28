@@ -99,13 +99,21 @@ $this->params['breadcrumbs'][] = $this->title;
                        <?php } ?>
                     </div>
                     <div style="border: 1px solid #ccc; padding: 10px;">
-                      <b>Checklist</b><br> <?= $value['checklist'] ?>
+                      <b>Checklist</b><br>
+                      <?php if($value['checklist']){ ?>
+                        <a href="<?= $value['checklist'] ?>" target='_blank'>
+                          <img src="<?= Yii::$app->urlManager->baseUrl ?>/img/pdf.png" alt="logo" style='height: 50px;'>
+                        </a>
+                       <?php } ?> 
                     </div>
                     <div style="border: 1px solid #ccc; padding: 10px;">
                       <b>PSG Timeline</b><br> <?= $value['psg_timelines'] ?>
                     </div>
                     <div style="border: 1px solid #ccc; padding: 10px;">
-                      <b>To Apply</b><br> <?= $value['to_apply'] ?>
+                      <b>To Apply</b><br> 
+                      <a href="<?= $value['to_apply'] ?>" target='_blank'>
+                          Click Here
+                      </a>
                     </div>
                     </div>
                     

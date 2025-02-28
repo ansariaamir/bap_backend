@@ -118,9 +118,10 @@ class ServiceDmsMapping extends \yii\db\ActiveRecord
                             'user'=>$val->user->name,
                             'action_on' => $val->created_on
                         ];
-                    }                
+                    }         
+                    $status = TApplicationDms::getFullStatus($TApplicationDms->dms_status);       
                 }
-                $status = TApplicationDms::getFullStatus($TApplicationDms->dms_status);
+                
             }
 
             $dms_data[] = [

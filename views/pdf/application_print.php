@@ -22,7 +22,7 @@
         <tr>
             <td>
                 <strong>Applicant Name:</strong><br>
-                Aamir
+                Test Name
             </td>
             <td>
                 <strong>Applicant Status:</strong><br>
