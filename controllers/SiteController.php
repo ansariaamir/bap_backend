@@ -52,7 +52,9 @@ class SiteController extends Controller
 
             $searchresult = $query->all(); // or $query->one() for a single result
 
-        $header_data = IncentiveFields::find()->where(['is_active'=>1])->all();
+        $header_data = IncentiveFields::find()->where(['is_active'=>1])
+        ->andWhere(['id'=>[9,10,11,12,13,14]])
+        ->all();
         $header = $header_check = [];
         foreach ($header_data as $key => $value) {
            $header[] = $value->field_name;

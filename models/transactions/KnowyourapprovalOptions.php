@@ -39,7 +39,7 @@ class KnowyourapprovalOptions extends \yii\db\ActiveRecord
         return [
             [['q_id', 'drive_question_id', 'scpm_id','service_id', 'preference_order', 'created_by', 'updated_by', 'is_active'], 'integer'],
             [['created_on', 'updated_on'], 'safe'],
-            [['options'], 'string', 'max' => 50],
+            [['options'], 'string', 'max' => 500],
         ];
     }
 
